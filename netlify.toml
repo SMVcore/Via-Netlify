@@ -1,0 +1,4 @@
+# Rod-konfiguration: slår byg fra (siden er én statisk fil) og udgiver smvcore 5-mappen.
+[build]
+  command = ""
+  publish = "smvcore 5"
