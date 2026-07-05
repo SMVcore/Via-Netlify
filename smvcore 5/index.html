@@ -109,6 +109,12 @@
     .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(232,119,34,.14); border: 1px solid rgba(232,119,34,.28); padding: 6px 14px; border-radius: 100px; font-size: 13px; font-weight: 600; color: var(--orange-light); margin-bottom: 24px; }
     .dot-pulse { width: 6px; height: 6px; background: var(--orange); border-radius: 50%; animation: dp 2s infinite; }
     @keyframes dp { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.75)} }
+
+    /* LinkedIn-sektion */
+    .li-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .li-card { background: var(--white); border: 1px solid var(--g200); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm); }
+    .li-card iframe { display: block; width: 100%; height: 560px; border: 0; }
+    @media (max-width: 900px) { .li-grid { grid-template-columns: 1fr; max-width: 520px; } .li-card iframe { height: 540px; } }
     .hero-title { font-size: clamp(32px,4.5vw,56px); font-weight: 900; color: var(--white); line-height: 1.1; letter-spacing: -1px; margin-bottom: 20px; }
     .hero-title em { font-style: normal; color: var(--orange); }
     .hero-sub { font-size: 17px; color: rgba(255,255,255,.7); margin-bottom: 36px; line-height: 1.72; }
@@ -267,6 +273,7 @@
         <li><a href="#priser" class="nav-link">Priser</a></li>
         <li><a href="#samarbejde" class="nav-link">Pilea</a></li>
         <li><a href="#om" class="nav-link">Om mig</a></li>
+        <li><a href="#indsigter" class="nav-link">Indsigter</a></li>
         <li><a href="#kontakt" class="nav-link nav-cta">Book møde</a></li>
       </ul>
       <button class="nav-hamburger" onclick="toggleMobile()" id="hamburger">
@@ -280,6 +287,7 @@
     <a href="#priser" class="nav-mobile-link" onclick="closeMobile()">Priser</a>
     <a href="#samarbejde" class="nav-mobile-link" onclick="closeMobile()">Pilea-samarbejde</a>
     <a href="#om" class="nav-mobile-link" onclick="closeMobile()">Om mig</a>
+    <a href="#indsigter" class="nav-mobile-link" onclick="closeMobile()">Indsigter</a>
     <a href="#kontakt" class="nav-mobile-link" onclick="closeMobile()" style="color:var(--orange);font-weight:700;border-bottom:none;margin-top:8px">Book møde →</a>
   </div>
 </nav>
@@ -574,6 +582,23 @@
         </ul>
         <a href="#kontakt" class="btn btn-primary">Lad os tale →</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SENESTE FRA LINKEDIN -->
+<section class="section" id="indsigter" style="background:var(--g50)">
+  <div class="container">
+    <div class="s-label">Indsigter</div>
+    <h2 class="s-title">Seneste fra LinkedIn</h2>
+    <p style="font-size:15px;color:var(--g600);line-height:1.72;max-width:640px;margin-bottom:40px">Tanker om salgsmodning, AI og ledelse i ejerledede SMV'er — direkte fra min LinkedIn.</p>
+    <div class="li-grid">
+      <div class="li-card"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7458480405332078594" frameborder="0" allowfullscreen title="LinkedIn-opslag af Frank Kirk" loading="lazy"></iframe></div>
+      <div class="li-card"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7450883179139289088" frameborder="0" allowfullscreen title="LinkedIn-opslag af Frank Kirk" loading="lazy"></iframe></div>
+      <div class="li-card"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7444317140075270144" frameborder="0" allowfullscreen title="LinkedIn-opslag af Frank Kirk" loading="lazy"></iframe></div>
+    </div>
+    <div style="margin-top:36px">
+      <a href="https://www.linkedin.com/in/frank-kirk" target="_blank" rel="noopener" class="btn btn-outline">Følg mig på LinkedIn →</a>
     </div>
   </div>
 </section>
