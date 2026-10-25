@@ -2,10 +2,13 @@
   publish = "."
   command = ""
 
+# Den gamle catch-all (alle ukendte adresser -> smvcore.html) er fjernet.
+# smvcore.html var en forældet version af forsiden med en kontaktformular,
+# der ikke sendte noget, og en forkert e-mailadresse.
 [[redirects]]
-  from = "/*"
-  to = "/smvcore.html"
-  status = 200
+  from = "/smvcore.html"
+  to = "/"
+  status = 301
 
 [build.environment]
   NODE_VERSION = "18"
